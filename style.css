@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2 {
@@ -38,51 +39,53 @@ body {
     width: 100%;
 }
 
-.logo{
-    height: 12vh;
+.logo {
+    width: 150px;
+    height: 150px;
 }
 
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: #e3d5ca;
+    background-color: #1C345Eff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
+    height: 12vh;
+    font-family: 'Raleway', sans-serif;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: white;
     transition: 0.3s ease;
 }
 
 #navbar li a:hover,
-#navbar li a.active
-{
+#navbar li a.active {
     color: #e71e4c;
 
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after{
+#navbar li a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -92,7 +95,7 @@ body {
     left: 20px;
 }
 
-#main{
+#main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,55 +104,227 @@ body {
     padding: 0 10%;
 }
 
-h1.heading{
+h1.heading {
     font-size: 80px;
     line-height: 64px;
-    color: #18345b
+    color: #18345b;
+    font-weight: 900;
 }
 
 #part1 {
-    width:100%
+    width: 100%
 }
 
-#part1 p{
-    color:#e71e4c; ;
+#part1 p {
+    color: #e71e4c;
+    ;
 }
 
-#part2 img{
+#part2 img {
     width: 50vw;
 }
 
-.products{
+.products {
     margin-top: 5%;
+    margin: 50px;
 }
 
-.items{
+.items {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 5%;
 }
 
-.product-box img{
+.product-box img {
     width: 150px;
     height: 150px;
     display: block;
     margin: auto;
 }
 
-#product-heading{
+#product-heading {
+    text-align: center;
+    color: #e71e4c;
+    font-weight: 500;
+}
+
+.product-info {
     text-align: center;
 }
 
-.product-info{
-    text-align: center;
-}
-
-.product-box{
-    width: 300px;
-    height: 300px;
+.product-box {
+    width: 270px;
+    height: 270px;
     margin: auto;
-    background-color: #e3d5ca;
+    background-color: #F7F7F7;
     padding: 10%;
     border-radius: 10%;
+    color: #18345b;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease;
 }
+
+.product-box:hover {
+    cursor: pointer;
+    color: #e71e4c;
+}
+
+#story-section {
+    margin: 70px 50px 50px 50px;
+}
+
+#our-story {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#story-info {
+    text-align: center;
+    margin: 3%;
+}
+
+.card {
+    display: block;
+    margin: auto;
+}
+
+.card-img {
+    width: 150px;
+    display: block;
+    /* margin: 50px; */
+}
+
+#slider {
+    display: flex;
+}
+
+#more-product {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px;
+}
+
+.product {
+    width: 750px;
+}
+
+.product-caption1 {
+    text-align: center;
+    background-color: #cdeac0;
+    padding: 30px;
+}
+
+.caption-heading1 {
+    color: #4E6C50;
+    font-weight: 500;
+}
+
+.product-caption2 {
+    text-align: center;
+    background-color: #efe9ae;
+    padding: 30px;
+}
+
+.caption-heading2 {
+    color: #AA8B56;
+}
+
+.product img {
+    display: block;
+    margin: auto;
+    width: 750px;
+}
+
+.para {
+    font-size: 20px;
+}
+
+.explore-more-btn1 {
+    padding: 10px;
+    border-style: none;
+    border: 1px solid #9ACD32;
+    border-radius: 30px;
+    background-color: white;
+    color: #9ACD32;
+}
+
+.explore-more-btn2 {
+    padding: 10px;
+    border-style: none;
+    border: 1px solid #d4cd8b;
+    border-radius: 30px;
+    background-color: white;
+    color: #d4cd8b;
+}
+
+#story-info {
+    color: #e71e4c;
+}
+
+#business-banner {
+    margin-top: 5%;
+}
+
+.add {
+    background-image: url(assets/AmwayBusiness.jpg);
+    width: 100%;
+    height: 70vh;
+    text-align: left;
+    padding-top: 15%;
+    padding-left: 15%;
+}
+
+.add h1 {
+    font-weight: 600;
+    color: #18345b;
+}
+
+.add p {
+    color: #e71e4c;
+}
+
+.add button {
+    padding: 15px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #18345b;
+    color: white;
+}
+
+.add button:hover {
+    background-color: white;
+    color: #18345b;
+    border: 1px solid #18345b;
+}
+
+.card-body h2 {
+    font-weight: 800;
+}
+
+.card-body p {
+    font-size: 20px;
+}
+
+.know-more-btn {
+    background-color: white;
+    color: #1C345Eff;
+    border: 1px solid #1C345Eff;
+    border-radius: 50px;
+}
+
+.shop-now-btn{
+    background-color: #18345b;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    border: 1px solid #18345b;
+    border-radius: 50px;
+    font-weight: 900;
+    margin-top: 5%;
+}
+
+#part1 p{
+    margin-top: 5%;
+    font-weight: 800;
+}
+
